@@ -14,6 +14,12 @@
 		7B06D2D21A089DAF00F09DA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B06D2D11A089DAF00F09DA3 /* Images.xcassets */; };
 		7B06D2D51A089DAF00F09DA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B06D2D31A089DAF00F09DA3 /* LaunchScreen.xib */; };
 		7B06D2E11A089DAF00F09DA3 /* GeofenceGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B06D2E01A089DAF00F09DA3 /* GeofenceGeneratorTests.m */; };
+		7B06D2EC1A089F7D00F09DA3 /* GeofenceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B06D2EB1A089F7D00F09DA3 /* GeofenceMonitor.m */; };
+		7B06D2EF1A08A7E900F09DA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B06D2EE1A08A7E900F09DA3 /* CoreLocation.framework */; };
+		7B06D2F11A08A94400F09DA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B06D2F01A08A94400F09DA3 /* CoreGraphics.framework */; };
+		7B06D2F31A08A95800F09DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B06D2F21A08A95800F09DA3 /* Foundation.framework */; };
+		7B06D2F91A08A9E300F09DA3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B06D2F81A08A9E300F09DA3 /* MapKit.framework */; };
+		7B06D2FB1A08AABE00F09DA3 /* Purdue.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 7B06D2FA1A08AABE00F09DA3 /* Purdue.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,13 @@
 		7B06D2DA1A089DAF00F09DA3 /* GeofenceGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofenceGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B06D2DF1A089DAF00F09DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B06D2E01A089DAF00F09DA3 /* GeofenceGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeofenceGeneratorTests.m; sourceTree = "<group>"; };
+		7B06D2EA1A089F5300F09DA3 /* GeofenceMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeofenceMonitor.h; sourceTree = "<group>"; };
+		7B06D2EB1A089F7D00F09DA3 /* GeofenceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofenceMonitor.m; sourceTree = "<group>"; };
+		7B06D2EE1A08A7E900F09DA3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7B06D2F01A08A94400F09DA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B06D2F21A08A95800F09DA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B06D2F81A08A9E300F09DA3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7B06D2FA1A08AABE00F09DA3 /* Purdue.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Purdue.gpx; path = GeofenceGenerator/Purdue.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B06D2F31A08A95800F09DA3 /* Foundation.framework in Frameworks */,
+				7B06D2F11A08A94400F09DA3 /* CoreGraphics.framework in Frameworks */,
+				7B06D2F91A08A9E300F09DA3 /* MapKit.framework in Frameworks */,
+				7B06D2EF1A08A7E900F09DA3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,11 @@
 		7B06D2B81A089DAF00F09DA3 = {
 			isa = PBXGroup;
 			children = (
+				7B06D2FA1A08AABE00F09DA3 /* Purdue.gpx */,
+				7B06D2F81A08A9E300F09DA3 /* MapKit.framework */,
+				7B06D2F21A08A95800F09DA3 /* Foundation.framework */,
+				7B06D2F01A08A94400F09DA3 /* CoreGraphics.framework */,
+				7B06D2EE1A08A7E900F09DA3 /* CoreLocation.framework */,
 				7B06D2C31A089DAF00F09DA3 /* GeofenceGenerator */,
 				7B06D2DD1A089DAF00F09DA3 /* GeofenceGeneratorTests */,
 				7B06D2C21A089DAF00F09DA3 /* Products */,
@@ -89,6 +111,8 @@
 				7B06D2D11A089DAF00F09DA3 /* Images.xcassets */,
 				7B06D2D31A089DAF00F09DA3 /* LaunchScreen.xib */,
 				7B06D2C41A089DAF00F09DA3 /* Supporting Files */,
+				7B06D2EA1A089F5300F09DA3 /* GeofenceMonitor.h */,
+				7B06D2EB1A089F7D00F09DA3 /* GeofenceMonitor.m */,
 			);
 			path = GeofenceGenerator;
 			sourceTree = "<group>";
@@ -168,6 +192,14 @@
 				TargetAttributes = {
 					7B06D2C01A089DAF00F09DA3 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7B06D2D91A089DAF00F09DA3 = {
 						CreatedOnToolsVersion = 6.1;
@@ -199,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B06D2FB1A08AABE00F09DA3 /* Purdue.gpx in Resources */,
 				7B06D2D01A089DAF00F09DA3 /* Main.storyboard in Resources */,
 				7B06D2D51A089DAF00F09DA3 /* LaunchScreen.xib in Resources */,
 				7B06D2D21A089DAF00F09DA3 /* Images.xcassets in Resources */,
@@ -219,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B06D2EC1A089F7D00F09DA3 /* GeofenceMonitor.m in Sources */,
 				7B06D2CD1A089DAF00F09DA3 /* ViewController.m in Sources */,
 				7B06D2CA1A089DAF00F09DA3 /* AppDelegate.m in Sources */,
 				7B06D2C71A089DAF00F09DA3 /* main.m in Sources */,
@@ -297,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,8 +380,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GeofenceGenerator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,8 +392,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GeofenceGenerator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
